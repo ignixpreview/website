@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation-background">
+        <div class="invitation-container">
+            <h1 class="couple-names">Isabella & Alexander</h1>
+            <p class="wedding-date">Saturday, August 17, 2024</p>
+            <p class="wedding-time">At 5:30 PM</p>
+            <p class="venue">The Enchanted Garden<br>
+            456 Fairytale Rd.<br>
+            Pasadena, CA 91101</p>
+            <p class="invitation-text">Join us for a magical celebration as we tie the knot and embark on our journey together.</p>
+            <div class="button-container">
+                <button class="rsvp-button">RSVP</button>
+                <button class="photos-button">View Photos</button>
+                <button class="registry-button">View Registry</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f0f0f0;
+}
+
+.invitation-background {
+    background-image: url('https://images.unsplash.com/photo-1599041797611-68f4fc062009?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitation-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+}
+
+.couple-names {
+    font-size: 3em;
+    color: #d47a9a;
+    margin: 0;
+    font-family: 'Garamond', serif;
+}
+
+.wedding-date, .wedding-time, .venue {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #5c4b8a;
+}
+
+.invitation-text {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #4a3c58;
+    line-height: 1.5;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #d47a9a;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff3b30;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .couple-names {
+        font-size: 2.5em;
+    }
+    .wedding-date, .wedding-time, .venue {
+        font-size: 1.2em;
+    }
+    .invitation-text {
+        font-size: 1em;
+    }
+}
+</style>
