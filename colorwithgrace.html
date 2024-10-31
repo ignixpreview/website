@@ -1,0 +1,226 @@
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            width:60%;
+            margin: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6f61;
+        }
+        h2 {
+            margin: 15px 0;
+            font-size: 2em;
+        }
+        h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .cta-buttons {
+            margin: 20px 0;
+        }
+        .cta-button {
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 15px 25px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #ff3b30;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+
+    <header>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+        <h1>Color with Grace LLC</h1>
+    </header>
+<br><br>
+    <div class="container">
+        <h2>Your Premier Beauty Destination</h2>
+        <p>Located at <strong>300 E Colorado Blvd. #241, Pasadena, CA 91101</strong>, Color with Grace LLC specializes in personalized beauty services that enhance your natural look. Our brand specialist, affiliated with <strong>@trussprofessional</strong>, ensures you receive the highest quality treatments.</p>
+
+        <h3>Next Available Appointment: December</h3>
+        <p>New clients are welcome! Text us only at <strong>213-400-1510</strong> to schedule your appointment today.</p>
+
+        <div class="cta-buttons">
+            <button class="cta-button">Schedule Appointment</button>
+            <button class="cta-button" onclick="window.open('https://www.instagram.com/colorwithgrace/?hl=en', '_blank')">Follow on Instagram</button>
+          <h2>Discover Exceptional Beauty Services in Pasadena, CA</h2>
+<p>Welcome to <strong>Color with Grace LLC</strong>, your premier destination for top-notch beauty services in <strong>Pasadena, California</strong>. Our salon specializes in personalized hair care and beauty treatments designed to enhance your natural beauty. As a trusted partner of <strong>@trussprofessional</strong>, we use high-quality products to deliver stunning results for every client.</p>
+
+<h3>Tailored Hair Care and Styling Specialist</h3>
+<p>At Color with Grace LLC, we understand that every individual has unique beauty needs. That's why we offer a comprehensive range of services, including expert hair coloring, cutting, and styling. Our brand specialist brings years of experience and a keen eye for detail, ensuring that you receive a personalized experience that leaves you feeling confident and revitalized.</p>
+          
+          <div class="image-container">
+    <div class="image-item">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+    </div>
+    <div class="image-item">
+        <img src="https://images.unsplash.com/photo-1613323885593-5fbcf35bf8ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+    </div>
+    <div class="image-item">
+        <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+    </div>
+</div>
+          
+          <style>
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        gap: 10px; /* Space between images */
+    }
+
+    .image-item {
+        flex: 1 1 calc(33% - 10px); /* 3 images in a row */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .image-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .image-item:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+    }
+
+    @media (max-width: 768px) {
+        .image-item {
+            flex: 1 1 100%; /* Stack images on mobile */
+        }
+    }
+</style>
+          
+          <br><br>
+
+<h3>Book Your Appointment Today!</h3>
+<p>New clients are welcome to schedule their first appointment with us, with openings available starting in <strong>December</strong>. To book your session, simply text us at <strong>213-400-1510</strong>. Experience the difference of personalized beauty services at Color with Grace LLC, where your satisfaction is our top priority.</p>
+
+<h2>Stay Connected with Color with Grace</h2>
+<p>Join our vibrant community on Instagram to stay updated with our latest beauty trends, promotions, and client transformations. Follow us for tips, inspiration, and to see how our team at Color with Grace LLC can help you achieve your beauty goals in Pasadena, California.</p>
+          
+        </div>
+</body>
+        </div></div>
+    </main>
+</body>
+<br><br>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Stay Connected with Color with Grace</h3>
+            <p>Join our community and receive the latest updates, beauty tips, and exclusive offers!</p>
+            <button class="cta-button">Schedule Appointment</button>
+            <button class="cta-button">Subscribe Now</button>
+        </div>
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com/colorwithgrace/?hl=en" target="_blank">Follow on Instagram</a>
+        </div>
+    </div>
+</footer>
+<br><br>
+
+<style>
+    footer {
+      background: rgba(255, 255, 255, 0.9);
+        color: #000000;
+        padding: 40px 20px;
+        text-align: center;
+      border-radius:9px;
+    }
+
+    .footer-container {
+        width:100%;
+        align-items: center;
+    }
+
+    .footer-content {
+        margin-bottom: 20px;
+    }
+
+   
+    
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .footer-links a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1em;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #ff6f61;
+    }
+</style>
