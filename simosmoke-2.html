@@ -1,0 +1,505 @@
+<body>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Simo Smoke and Vape</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hours">Hours</a></li>
+                    <li><a href="https://www.instagram.com/simosmokeandvape/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.yelp.com/biz/simo-smoke-and-vape-anaheim-2" target="_blank">Yelp</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/BaqGWo_4LNICA2-j97Q7Bg/o.jpg');">
+            <div class="hero-content">
+                <h1>Simo Smoke and Vape</h1>
+                <p>Your trusted smoke and vape shop in Anaheim, CA.</p>
+                <a href="https://g.co/kgs/cjGs2Bw" target="_blank" class="cta-button">Get Directions</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Simo Smoke and Vape, located in Anaheim, CA, offers high-quality smoking and vaping products. Whether you’re a seasoned enthusiast or just starting, we have everything you need in one convenient location.</p>
+            <p>We pride ourselves on providing excellent customer service and a welcoming atmosphere. Visit us today and explore our wide range of products!</p>
+        </section>
+
+        <!-- Hours Section -->
+        <section id="hours" class="hours">
+            <h3>Store Hours</h3>
+            <ul>
+                <li>Friday: 10 AM – 11 PM</li>
+                <li>Saturday: 10 AM – 11 PM</li>
+                <li>Sunday: 11 AM – 10 PM</li>
+                <li>Monday (Veterans Day): 10 AM – 10 PM</li>
+                <li>Tuesday – Thursday: 10 AM – 10 PM</li>
+            </ul>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <a href="https://www.instagram.com/simosmokeandvape/" target="_blank" class="cta-button">Follow Us on Instagram</a>
+            <a href="https://www.yelp.com/biz/simo-smoke-and-vape-anaheim-2" target="_blank" class="cta-button">Check Us Out on Yelp</a>
+        </section>
+    </div>
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #121212;
+        }
+
+        .container {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: #f7a800;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #f7a800;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #ff8c00;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #222;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Store Hours Section */
+        .hours {
+            background-color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hours h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hours ul {
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        .hours ul li {
+            margin: 10px 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cta-section .cta-button {
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .cta-button {
+                padding: 10px 18px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Mobile Menu Toggle */
+        .nav-links.active {
+            display: flex;
+        }
+    </style>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+  
+  
+  
+ 
+
+    <section id="parallax-portfolio" class="parallax">
+        <div class="parallax-content">
+            <h2>Explore Our Portfolio</h2>
+            <p>Discover the wide variety of products and services we offer.</p>
+        </div>
+    </section>
+
+    <section id="parallax-contact" class="parallax">
+        <div class="parallax-content">
+            <h2>Contact Us</h2>
+            <p>Get in touch and visit us at our Anaheim location.</p>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="product-gallery" class="product-gallery">
+        <h2>Our Products</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/t5Owm32_8q8cy6bo7-Vv9w/o.jpg" alt="Premium Vape Collection">
+                <h3>Premium Vape Collection</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/dDPH6gtHhcurYunn-M5HmA/o.jpg" alt="Vape Accessories">
+                <h3>Vape Accessories</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/zfd7Fjkt__jY0KrwVMVCnQ/o.jpg" alt="Tobacco Products">
+                <h3>Tobacco Products</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/BaqGWo_4LNICA2-j97Q7Bg/o.jpg" alt="Unique Smoking Gadgets">
+                <h3>Unique Smoking Gadgets</h3>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Parallax Section Styling */
+        .parallax {
+            position: relative;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        #parallax-logo {
+            background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/BaqGWo_4LNICA2-j97Q7Bg/o.jpg');
+        }
+
+        #parallax-portfolio {
+            background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/dDPH6gtHhcurYunn-M5HmA/o.jpg');
+        }
+
+        #parallax-contact {
+            background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/zfd7Fjkt__jY0KrwVMVCnQ/o.jpg');
+        }
+
+        .parallax-content h1, .parallax-content h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .parallax-content p {
+            font-size: 1.5rem;
+        }
+
+        /* Product Gallery Styling */
+        #product-gallery {
+            background-color: #222;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #product-gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .gallery-item {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            color: white;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .parallax-content h1, .parallax-content h2 {
+                font-size: 2rem;
+            }
+
+            .parallax-content p {
+                font-size: 1.2rem;
+            }
+
+            #product-gallery h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+  
+  
+</body>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Simo Smoke and Vape</h3>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://www.instagram.com/simosmokeandvape/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.yelp.com/biz/simo-smoke-and-vape-anaheim-2" target="_blank">Yelp</a></li>
+                <li><a href="https://g.co/kgs/cjGs2Bw" target="_blank">Get Directions</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <p>📍 117 N Brookhurst St, Anaheim, CA 92801</p>
+            <p>📞 (714) 844-2493</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Simo Smoke and Vape. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<style>
+  /* Footer Styles */
+.footer {
+    background-color: #222;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f7a800;
+}
+
+.footer-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+    }
+
+    .footer-links ul li {
+        margin: 10px 0;
+    }
+}
+
+</style>
